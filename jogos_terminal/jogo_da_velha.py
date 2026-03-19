@@ -1,3 +1,32 @@
+# Essa é mais uma tentativa de criar uma branch separada somente para o minimax
+class Minimax:
+    def __init__(self, max, min):
+        self._max = max
+        self._min = min
+
+    @property
+    def minimo(self):
+        return self._min
+    
+    @minimo.setter
+    def minimo(self, valor):
+        if valor < self._max:
+            self._min = valor
+        else:
+            self._min = 0
+
+    @property
+    def maximo(self):
+        return self._max
+    
+    @maximo.setter
+    def maximo(self, valor):
+        if valor > self._min:
+            self._max = valor
+        
+        else:
+            self._maximo = 1
+    
 # Define a classe principal que gerencia o jogo da velha
 class JogoVelha:
     # Método construtor que inicializa o jogo
