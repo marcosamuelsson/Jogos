@@ -1,3 +1,6 @@
+# Essa versão do Jogo da velha ainda necessita de dois jogadores para funcionar
+# Para acessar uma versão com IA integrada entre na brancj minimax
+
 # Define a classe principal que gerencia o jogo da velha
 class JogoVelha:
     # Método construtor que inicializa o jogo
